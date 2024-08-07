@@ -1,0 +1,108 @@
+
+ /* BARRA DE NAVEGADOR */
+
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 15%;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+width: 80px;
+height: 80px;
+float: left;
+}
+ul{
+    list-style: none;
+}
+li{
+    position: relative;
+    float: right;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 25px;
+    display: block;
+    margin-right: 20px;
+}
+ul li a:hover{
+    background-color: rgb(25, 25, 25);
+    display: block;
+}
+ul li:hover > ul{
+    display: block;
+}
+ul li ul {
+    position: absolute;
+    background-color: black;display: block;
+    padding: 10px;
+    display: none;
+}
+
+
+
+
+
+
+ /* IGRESAR COMO ALUMNO */
+
+.alumnos{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url(Imagenes/Fondo\ alumno.png);
+    background-size: cover;
+}
+.logoalumno{
+    width: 50%;
+}
+.formalumn{
+    background-color: rgba(255, 255, 255, 0.546);
+    width: 60%;
+    text-align:center;
+    margin:auto;
+    margin-top:2%;
+    width: 30%;
+    padding: 50px;
+    border-radius:20px;
+}
+button{
+    padding: 10px;
+    width: 130px;
+    background-color: brown;
+    color: white;
+    border-radius:5px ;
+    margin: 20px; 
+}
+
+
+
+
+
+
+ /* IGRESAR COMO ALUMNODOCENTE */
+ 
+.docente{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: url(Imagenes/Fondo\ docente.png);
+    background-size: cover;
+}
+.formdocent{
+    background-color: rgba(0, 0, 0, 0.785);
+    width: 60%;
+    text-align:center;
+    margin:auto;
+    margin-top:2%;
+    width: 30%;
+    padding: 50px;
+    border-radius:20px;
+}
+.titulo2{
+    color: white;
+}

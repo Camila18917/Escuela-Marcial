@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Escuela de artes marciales en Argentina, te invitamos que seas participe de este desarollo personal">
@@ -11,54 +10,72 @@
     <meta name="autor" content="Camila Gomez">
     <meta name="publisher" content="Escuela de Artes marciales">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title> Actividades - ¿Que hacemos en el dojo? </title>
 </head>
 <body>
 <header>
-    <div>
-        <ul>
-         <a href="index.html"> <img class="logo" src="Imagenes/logo.png" alt=""></a>
-         <li><a href="#">Inicias sesion</a>
-             <ul>
-                 <li><a href="5-sesionalumn.html"> Alumno </a></li>
-                 <li><a href="6-sesionadicente.html">Docente</a> </li>
-             </ul>
-         </li>
-         <li><a href="4-contacto.html">Contacto</a></li>
-         <li><a href="3-actividades.html">Actividades</a></li>
-         <li><a href="2-nosotros.html"> Sobre nosotros </a></li>
-        </ul> 
-     </div>
-     <div>
-        <p>karate</p>
-        <p>Taekwondo</p>
-        <p>Muay thai</p>
-        <p>Jiu Jitsu </p>
-        <p>Akido</p>
-        <p>Krav maga</p>
+    <div class="header">
+        <a href="1-index.html" class="alogo"> <img class="logo" src="Imag/Logo.png" alt=""></a>
+        <img class="abrir" id="abrir" onclick="hamb()"  src="https://cdn-icons-png.flaticon.com/512/9451/9451364.png" alt="abrir">
+        <nav class="nav" id="nav">
+            <ul class="barra">
+                <img class="cerrar" id="cerrar" src="https://static.vecteezy.com/system/resources/previews/023/465/799/non_2x/cross-mark-dark-mode-glyph-ui-icon-delete-action-cancel-button-user-interface-design-white-silhouette-symbol-on-black-space-solid-pictogram-for-web-mobile-isolated-illustration-vector.jpg" alt="cerrar">
+                <li><a href="2-nosotros.html"> Sobre nosotros </a></li>
+                <li><a href="3-actividades.html">Actividades</a></li>
+                <li><a href="4-contacto.html">Contacto</a></li>
+                <li onclick="submenu()" id="ingreso"><a  href="#">Iniciar sesion</a>
+                    <ul class="ingresar" id="ingresar">
+                        <li><a href="5-sesionalumn.html"> Alumno </a></li>
+                        <li><a href="6-sesionadicente.html">Docente</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="barra2">
+        <p class="p2">karate</p>
+        <p class="p1">Taekwondo</p>
+        <p class="p2">Muay thai</p>
+        <p class="p1">Jiu Jitsu </p>
+        <p class="p2">Akido</p>
+        <p class="p1">Krav maga</p>
     </div>
 </header>
+
 <main>
-    <section>
-        <div>
+    <section class="sa1"><br>
+        <div class="etiquetaa1">
             <h1> ¿Qué hacemos? </h1>
-            <p> Los estudiantes practican y perfeccionan las técnicas específicas de su arte marcial, como golpes, patadas, bloqueos, lanzamientos, derribos, agarres, entre otros.</p> <br>
-            <p> Tambien secuencias preestablecidas de movimientos que simulan una pelea contra oponentes imaginarios. Estas formas ayudan a los estudiantes a mejorar su técnica, fluidez y concentración.</p> <br>
-            <p> O Se pueden llevar a cabo prácticas de meditación, respiración y concentración para ayudar a los estudiantes a calmar la mente y mejorar su enfoque.</p> <br>
+            <p> Los estudiantes practican y perfeccionan las técnicas específicas de su arte marcial, como golpes, patadas, bloqueos, lanzamientos, derribos, agarres, entre otros.</p> 
+            <p class="chautext"> Tambien secuencias preestablecidas de movimientos que simulan una pelea contra oponentes imaginarios. Estas formas ayudan a los estudiantes a mejorar su técnica, fluidez y concentración.</p> 
+            <p> O Se pueden llevar a cabo prácticas de meditación, respiración y concentración para ayudar a los estudiantes a calmar la mente y mejorar su enfoque.</p>
         </div>
     </section>
-    <section>
-        <div>
+    <section class="sa2"><br>
+        <div class="etiquetaa2">
             <h1> Galeria </h1>
-            <img src="Imagenes/Fotos.png" alt="">
+            <img src="Imag/g1.png" alt="">
+            <img src="Imag/g2.png" alt="">
+            <img src="Imag/g3.png" alt="">
+            <img src="Imag/g4.png" alt="">
+            <img src="Imag/g5.png" alt="">
+            <img src="Imag/g6.png" alt="">
+            <img src="Imag/g7.png" alt="">
+            <img src="Imag/g8.png" alt="">
+            <img src="Imag/g9.png" alt="">
+            <img src="Imag/g10.png" alt="">
+            <img src="Imag/g11.png" alt="">
+            <img src="Imag/g12.png" alt="">
         </div>
     </section>
 </main>
+
 <footer>
-    <img src="Imagenes/Icono Facebook.png" alt="">
-    <img src="Imagenes/Icono Instagram.png.png" alt="">
-    <img src="Imagenes/Icono Twitter.png.png" alt="">
-    <img src="Imagenes/Icono Youtube.png.png" alt="">
+    <img src="Imag/Icono Facebook.png" alt="">
+    <img src="Imag/Icono Instagram.png" alt="">
+    <img src="Imag/Icono Twitter.png" alt="">
+    <img src="Imag/Icono Youtube.png" alt="">
 </footer>
 </body>
 </html>

@@ -1,48 +1,162 @@
 
  /* BARRA DE NAVEGADOR */
-
-header{
-    position:fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 15%;
-    background-color: black;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    height: 8rem;
+    overflow: hidden;
     align-items: center;
+    display: flex;
     justify-content: space-between;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0);
 }
-header .logo{
-width: 80px;
-height: 80px;
-float: left;
+.alogo{
+    width: 25%;;
 }
-ul{
-    list-style: none;
+.logo{
+    max-width:8rem;
+    margin-left: 30%;
 }
-li{
-    position: relative;
-    float: right;
-}
-ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 25px;
-    display: block;
-    margin-right: 20px;
-}
-ul li a:hover{
-    background-color: rgb(25, 25, 25);
-    display: block;
-}
-ul li:hover > ul{
-    display: block;
-}
-ul li ul {
-    position: absolute;
-    background-color: black;display: block;
-    padding: 10px;
+.abrir{
     display: none;
+    max-width: 4rem;
+    margin-right: 10%;
+    cursor: pointer;
+    background-color: rgb(25, 25, 25);
+}
+.cerrar{
+    display: none;
+    cursor: pointer;
+    max-width: 3.6rem;
+    margin: auto;
+    margin-top: 14%;
+    margin-bottom: 1rem
+}
+.nav{
+    width: 80%;
+}
+.barra{
+    display: flex;
+    justify-content: right;
+    list-style-type: none;
+    font-size: 120%;
+    margin-right: 15%;
+}
+li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-block: 100%;
+    padding: 12px;
+    padding-top: 100%;
+    padding-bottom: 100%;
+}
+li a:hover{
+    background-color:rgb(204,34,34);
+    color: black;
+}
+.ingresar{
+    display: none;
+    position: absolute;
+    margin-top:3.3rem;
+    background-color:black;
+}
+.ingresar.show{
+    display: block;
+    
+}
+.ingresar li{
+    overflow: hidden;
+    list-style: none;
+    width:8rem;
+    padding: 15%;
+}
+.ingresar li:hover{
+    background-color:rgb(204,34,34);
+    width:8rem;
+}
+.barra2{
+    display: flex;
+    overflow: hidden;
+    gap: 2rem;
+    height: 3vh;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+.p2{
+    background-color :rgb(204,34,34);
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+
+
+
+@media screen and (max-width:870px){
+    .barra{
+        margin-right: 2%;
+    }
+}
+
+
+@media screen and (max-width:700px){
+    .abrir,.cerrar{
+        display: block;
+    }
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 35%;
+        background-color: rgb(14, 14, 14);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(57, 57, 57, 0.443);
+    }
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgb(14, 14, 14);
+        padding: 1rem;
+        box-shadow: 0 0 0 100vmax rgba(57, 57, 57, 0.443);
+    }
+    .barra{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    li{
+        font-size: 80%;
+        justify-content: left;
+    }
+    li a{
+        overflow: hidden;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        padding-block: 10%;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    .ingresar{
+        margin-top:1.3rem;
+        background-color:  rgb(14, 14, 14);
+        font-size: 110%;
+    }
+    .p2{
+        color:rgb(204,34,34);
+    }
+    .p1{
+        color: white;
+        padding-right: 1%;
+    }
 }
 
 
@@ -50,12 +164,487 @@ ul li ul {
 
 
 
- /* IGRESAR COMO ALUMNO */
+ /* HOME */
+
+body{
+    background-color: rgba(145, 145, 145, 0.277);
+}
+.s1{
+    width: 100%;
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-image: url(Imag/Fondo\ home\ 1.png);
+    background-size:cover;
+}
+.etiqueta1{
+    background-color: rgba(255, 255, 255, 0.936);
+    width: 50%;
+    margin: auto;
+    margin-top: 2%;
+    padding: 5%;
+}
+.etiqueta1 h1{
+    font-size:2.2rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.etiqueta1 p{
+    font-size: 1.2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.s2{
+    width: 100%;
+    height: 29rem;
+    background-repeat: no-repeat;
+    background-image: url(Imag/Fondo\ home\ 2.png);
+    background-size:cover;
+}
+.etiqueta2{
+    background-color: rgba(255, 255, 255, 0.822);
+    width: 70%;
+    margin: auto;
+    margin-top: 2%;
+    padding: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.etiqueta2 h1{
+    font-size: 2.2rem;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.etiqueta2 p{
+    font-size: 1rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.etiqueta3{
+    margin: auto;
+    margin-top: 5%;
+    width: 70%;
+}
+.etiqueta3 h3{
+    font-size: 2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 5px solid brown;
+    width: 15rem;
+    margin-bottom: 2%;
+}
+.etiqueta3 p{
+    width: 35rem;
+    font-size: 1.2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.form{
+    margin: auto; 
+    margin-top: 2%;
+    width: 70%;
+    margin-bottom: 5%;
+}
+.in input{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(157,157,157);
+    padding: 1rem;
+}
+.input{
+    display: flex;
+}
+
+.in{
+    flex-direction: column;
+    width: 50%;
+    display: flex;   
+    margin-right: 1%;
+}
+.input3{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgb(157,157,157);
+    padding: 1rem;
+    width: 70%;
+}
+.bf{
+    padding: 10px;
+    width: 130px;
+    background-color: brown;
+    color: white;
+    border-radius:5px ;
+    margin: 2%; 
+}
+
+
+
+
+@media screen and (max-width:900px){
+    .s1{
+        height: 30rem;
+    }
+    .etiqueta1{
+        padding: 3%;
+        height: 20rem;
+    }
+    .etiqueta1 h1{
+        font-size: 2rem;
+    }
+    .etiqueta1 p{
+        font-size: 1rem;
+    }
+    .s2{
+        height: 33rem;
+    }
+    
+    .etiqueta2{
+        padding: 3%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .etiqueta2 h1{
+        font-size: 2rem;
+    }
+    .etiqueta2 p{
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width:700px){
+    .etiqueta1 h1{
+        font-size: 1.5rem;
+    }
+    .etiqueta1 p{
+        font-size: 1rem;
+    }
+    .etiqueta2 h1{
+        font-size: 1.5rem;
+    }
+    .etiqueta3{
+        margin-bottom: 6%;
+    }
+    .etiqueta3 h3{
+        font-size: 2rem;
+    }
+    .etiqueta3 p{
+        font-size: 0.8rem;
+        width: 25rem;
+    }
+    .input{
+        flex-direction: column;
+    }
+    .input3{
+        padding: 4%;
+    }
+    .in{
+        width: 100%;
+    }
+    footer img{
+        margin-right:1rem ;
+    }
+}
+
+
+
+
+
+
+ /* SOBRE NOSOTROS */
+.sn1{
+    width: 100%;
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-image: url(Imag/Fondo\ Nosotros.png);
+    background-size:cover;
+}
+.etiquetas1{
+background-color: rgba(255, 255, 255, 0.936);
+width: 60%;
+margin: auto;
+margin-top: 6%;
+padding: 3%;
+padding-top: 4%;
+display: flex;
+}
+.textos{
+    margin-right:5% ;
+}
+.textos h3{
+    text-align: center;
+font-size:2rem;
+margin-bottom: 5%;
+font-family:Arial, Helvetica, sans-serif;
+}
+.textos p{
+font-size: 1rem;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.etiquetas1 img{
+    width:15rem;
+}
+.sn2{
+    margin-top: 9%;    
+}
+.etiquetas2{
+    margin: auto;
+    margin-top: 5%;
+    width: 70%;
+}
+.etiquetas2 h3{
+    font-size: 2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 5px solid brown;
+    width: 15rem;
+    margin-bottom: 2%;
+}
+.val{
+    overflow:hidden;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin-top: 6%;
+    margin-bottom: 20%;
+}
+.valores{
+    margin-right: 5%;
+}
+.valores img{
+    width: 7rem;
+}
+.valores p{
+    display: flex;
+    flex-direction: column;
+    width: 7rem;
+    padding: 10%;
+}
+.etiquetas3{
+    margin: auto;
+    margin-top: 5%;
+    width: 70%;
+    text-align: center;
+}
+.etiquetas3 h3{
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 4%;
+}
+.etiquetas3 img{
+    width: 90%;
+    margin-bottom: 6%;
+}
+
+
+
+@media screen and (max-width:1050px){
+    .etiquetas1 p{
+        font-size: 0.8rem;
+    }
+}
+
+
+@media screen and (max-width:900px){
+    .chautext{
+        display: none;
+    }
+    .val{
+        overflow: scroll;
+    }
+    .etiquetas2 h3{
+        font-size: 1.4rem;
+    }
+    .etiquetas3 h3{
+        font-size: 1.2rem;
+    }
+}
+
+
+@media screen and (max-width:750px){
+    .etiquetas1{
+        flex-direction: column;
+    }
+    .etiquetas1 img{
+        width: 12rem;
+        margin: auto;
+    }
+
+}
+
+
+
+
+
+
+
+/* ACTIVIDADES */
+.sa1{
+    width: 100%;
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-image: url(Imag/Fondo\ galeria.png);
+    background-size:cover;
+}
+.etiquetaa1{
+    overflow:hidden;
+    background-color: rgba(255, 255, 255, 0.936);
+    width: 35%;
+    margin-top: 6%;
+    padding: 3%;
+    padding-top: 3%;
+}
+.etiquetaa1 h1{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.etiquetaa1 p{
+    font-size: 0.8rem;
+    width: 25rem;
+    margin-top: 3%;
+}
+.etiquetaa2{
+    margin: auto;
+    margin-top: 2%;
+    width: 70%;
+    margin-bottom: 3%;
+
+}
+.etiquetaa2 h1{
+    font-size: 2rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 5px solid brown;
+    width: 15rem;
+    margin-bottom: 2%;
+}
+.etiquetaa2 img{
+    width: 12rem;
+    height: 10rem;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+
+
+
+@media screen and (max-width:1200px){
+    .etiquetaa1{
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width:1000px){
+    .etiquetaa1{
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width:1090px){
+    .etiquetaa1{
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width:900px){
+    .etiquetaa1{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:750px){
+    .sa1{
+        height: 25rem;
+    }
+    .etiquetaa1{
+        width: 70%;
+    }
+    .etiquetaa1 p{
+        width: 18rem;
+    }
+
+    .etiquetaa2 img{
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+
+
+
+
+
+/* CONTACTO */
+.sc{
+    height: 26.99rem;
+    display: flex;
+    background-repeat: no-repeat;
+    background-image: url(Imag/Fondo\ Contacto.png);
+    background-size:cover;
+}
+.contacto{
+    text-align: center;
+    margin: auto;
+    overflow:hidden;
+    background-color: rgba(5, 5, 5, 0.936);
+    width: 23%;
+    height: 18rem;
+    padding: 4%;
+    color: white;
+}
+.contacto h1{
+    margin-bottom: 15%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contacto p{
+    width: rem;
+    font-size: 0.8rem;
+}
+.buttonr{
+    margin-bottom: 12%;
+    background: brown;
+    padding: 6%;
+    border-radius: 10px;
+    color: rgb(221, 219, 219);
+    cursor: pointer;
+    border: 1px solid black;
+}
+.buttong{
+    margin-bottom: 12%;
+    background: rgb(66, 201, 73);
+    padding: 6%;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+
+
+@media screen and (max-width:1000px){
+    .contacto{
+        height: 15rem;
+        width: 30%;
+    }
+    .contacto p{
+        font-size: 0.5rem;
+    } 
+}
+
+
+@media screen and (max-width:700px){
+    .contacto{
+        height: 12rem;
+        width: 40%;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* IGRESAR COMO ALUMNO */
 
 .alumnos{
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-image: url(Imagenes/Fondo\ alumno.png);
+    background-image: url(Imag/Fondo\ alumno.png);
     background-size: cover;
 }
 .logoalumno{
@@ -63,15 +652,15 @@ ul li ul {
 }
 .formalumn{
     background-color: rgba(255, 255, 255, 0.546);
-    width: 60%;
     text-align:center;
     margin:auto;
     margin-top:2%;
     width: 30%;
+    height: 20rem;
     padding: 50px;
     border-radius:20px;
 }
-button{
+.bf{
     padding: 10px;
     width: 130px;
     background-color: brown;
@@ -90,7 +679,7 @@ button{
 .docente{
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-image: url(Imagenes/Fondo\ docente.png);
+    background-image: url(Imag/Fondo\ docente.png);
     background-size: cover;
 }
 .formdocent{
@@ -106,3 +695,23 @@ button{
 .titulo2{
     color: white;
 }
+
+
+
+
+
+ /* FOOTER*/
+ footer{
+    background: #000000;
+    text-align: center;
+    padding: 1%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+ }
+ footer img{
+    width: 2rem;
+    margin-left: 1%;
+    border-radius: 100%;
+    cursor:pointer ;
+ }

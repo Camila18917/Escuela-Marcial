@@ -10,59 +10,94 @@
     <meta name="autor" content="Camila Gomez">
     <meta name="publisher" content="Escuela de Artes marciales">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title> Nosotros - Conoce un poco mas hacerca de esta escuela de artes marciales </title>
 </head>
 <body>
-<header>
-    <div>
-        <ul>
-         <a href="index.html"> <img class="logo" src="Imagenes/logo.png" alt=""></a>
-         <li><a href="#">Inicias sesion</a>
-             <ul>
-                 <li><a href="5-sesionalumn.html"> Alumno </a></li>
-                 <li><a href="6-sesionadicente.html">Docente</a> </li>
-             </ul>
-         </li>
-         <li><a href="4-contacto.html">Contacto</a></li>
-         <li><a href="3-actividades.html">Actividades</a></li>
-         <li><a href="2-nosotros.html"> Sobre nosotros </a></li>
-        </ul> 
-     </div>
-     <div>
-        <p>karate</p>
-        <p>Taekwondo</p>
-        <p>Muay thai</p>
-        <p>Jiu Jitsu </p>
-        <p>Akido</p>
-        <p>Krav maga</p>
-    </div>
-</header>
+    <header>
+        <div class="header">
+            <a href="1-index.html" class="alogo"> <img class="logo" src="Imag/Logo.png" alt=""></a>
+            <img class="abrir" id="abrir" onclick="hamb()"  src="https://cdn-icons-png.flaticon.com/512/9451/9451364.png" alt="abrir">
+            <nav class="nav" id="nav">
+                <ul class="barra">
+                    <img class="cerrar" id="cerrar" src="https://static.vecteezy.com/system/resources/previews/023/465/799/non_2x/cross-mark-dark-mode-glyph-ui-icon-delete-action-cancel-button-user-interface-design-white-silhouette-symbol-on-black-space-solid-pictogram-for-web-mobile-isolated-illustration-vector.jpg" alt="cerrar">
+                    <li><a href="2-nosotros.html"> Sobre nosotros </a></li>
+                    <li><a href="3-actividades.html">Actividades</a></li>
+                    <li><a href="4-contacto.html">Contacto</a></li>
+                    <li onclick="submenu()" id="ingreso"><a  href="#">Iniciar sesion</a>
+                        <ul class="ingresar" id="ingresar">
+                            <li><a href="5-sesionalumn.html"> Alumno </a></li>
+                            <li><a href="6-sesionadicente.html">Docente</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="barra2">
+            <p class="p2">karate</p>
+            <p class="p1">Taekwondo</p>
+            <p class="p2">Muay thai</p>
+            <p class="p1">Jiu Jitsu </p>
+            <p class="p2">Akido</p>
+            <p class="p1">Krav maga</p>
+        </div>
+    </header>
+    
 <main>
-    <section>
-        <div>
+    <section class="sn1"><br>
+        <div class="etiquetas1">
+            <div class="textos">
             <h3> Nosotros </h3>
             <p>Somos un centro de entrenamiento dedicado al desarrollo integral del cuerpo, la mente y el espíritu a través de las disciplinas marciales.</p><br>
-            <p> En nuestra escuela, nos especializamos en una variedad de estilos tradicionales y contemporáneos. Nuestro enfoque no solo se centra en la técnica y el rendimiento físico, sino también en los valores fundamentales que nos representan como comunidad</p> <br>
+            <p class="chautext"> En nuestra escuela, nos especializamos en una variedad de estilos tradicionales y contemporáneos. Nuestro enfoque no solo se centra en la técnica y el rendimiento físico, sino también en los valores fundamentales que nos representan como comunidad</p> <br>
+            </div>
+            <img src="Imag/Icono Nosotros.png" alt="icono nosotros">
         </div>
     </section>
-    <section>
-        <div>
-            <h1> Valores </h1>
-            <img src="Imagenes/Valores.png" alt="">
+    <section class="sn2"><br>
+        <div class="etiquetas2">
+            <h3> Valores </h3>
+            <div class="val">
+            <div class="valores">
+                <img src="Imag/Valor 1.png" alt=""> 
+                <p>Respeto</p>
+            </div>
+            <div class="valores">
+                <img src="Imag/Valor 2.png" alt=""> 
+                <p>Concentracion</p>
+            </div>
+            <div class="valores">
+                <img src="Imag/Valor 3.png" alt=""> 
+                <p>Disciplina</p>
+            </div>
+            <div class="valores">
+                <img src="Imag/Valor 4.png" alt=""> 
+                <p>Compañerismo</p>
+            </div>
+            <div class="valores">
+                <img src="Imag/Valor 5.png" alt=""> 
+                <p>Seguridad</p>
+            </div>
+            <div class="valores">
+                <img src="Imag/Valor 6.png" alt=""> 
+                <p> Esfuerzo </p>
+            </div>
+            </div>
         </div>
     </section>
-    <section>
-        <div>
+    <section class="sn3">
+        <div class="etiquetas3">
             <h3> Contamos con sucursales en CABA </h3>
-            <img src="Imagenes/Dojos.png" alt="">
+            <img src="Imag/Dojos.png" alt="">
         </div>
     </section>
 </main>
+
 <footer>
-    <img src="Imagenes/Icono Facebook.png" alt="">
-    <img src="Imagenes/Icono Instagram.png.png" alt="">
-    <img src="Imagenes/Icono Twitter.png.png" alt="">
-    <img src="Imagenes/Icono Youtube.png.png" alt="">
+    <img src="Imag/Icono Facebook.png" alt="">
+    <img src="Imag/Icono Instagram.png" alt="">
+    <img src="Imag/Icono Twitter.png" alt="">
+    <img src="Imag/Icono Youtube.png" alt="">
 </footer>
 </body>
 </html>

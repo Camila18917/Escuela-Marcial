@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Escuela de artes marciales en Argentina, te invitamos que seas participe de este desarollo personal y adaptable a lo que necesites">
+    <meta name="keywords" content="Artes marciales, oportunidades, consulta, rutina, entrenamiento">
+    <link rel="canonical" href="www.fitpalartesmarciales.com">
+    <meta name="robots" content="www.fitpalartesmarciales.com">
+    <meta name="autor" content="Camila Gomez">
+    <meta name="publisher" content="Escuela de Artes marciales">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title> inicio - Bienvenidos a nuestra escuela de artes marciales </title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <a href="1-index.html" class="alogo"> <img class="logo" src="Imag/Logo.png" alt=""></a>
+        <img class="abrir" id="abrir" onclick="hamb()"  src="https://cdn-icons-png.flaticon.com/512/9451/9451364.png" alt="abrir">
+        <nav class="nav" id="nav">
+            <ul class="barra">
+                <img class="cerrar" id="cerrar" src="https://static.vecteezy.com/system/resources/previews/023/465/799/non_2x/cross-mark-dark-mode-glyph-ui-icon-delete-action-cancel-button-user-interface-design-white-silhouette-symbol-on-black-space-solid-pictogram-for-web-mobile-isolated-illustration-vector.jpg" alt="cerrar">
+                <li><a href="2-nosotros.html"> Sobre nosotros </a></li>
+                <li><a href="3-actividades.html">Actividades</a></li>
+                <li><a href="4-contacto.html">Contacto</a></li>
+                <li onclick="submenu()" id="ingreso"><a  href="#">Iniciar sesion</a>
+                    <ul class="ingresar" id="ingresar">
+                        <li><a href="5-sesionalumn.html"> Alumno </a></li>
+                        <li><a href="6-sesionadicente.html">Docente</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="barra2">
+        <p class="p2">karate</p>
+        <p class="p1">Taekwondo</p>
+        <p class="p2">Muay thai</p>
+        <p class="p1">Jiu Jitsu </p>
+        <p class="p2">Akido</p>
+        <p class="p1">Krav maga</p>
+    </div>
+</header>
+
+<main>
+    <section class="s1">
+        <br><br><br><br>
+        <div class="etiqueta1">
+            <h1>Bienvenidos a nuestra escuela de artes marciales más grande de Argentina</h1><br>
+            <p>La inscripción al ciclo 2024 ya abrió.</p>
+            <p>¡No te quedes afuera, las vacantes son limitadas!</p>
+        </div>
+    </section>
+    <br><br><br><br><br>
+    <section class="s2">
+        <br>
+        <div class="etiqueta2">
+            <h1> ¡Esta es tu oportunidad! </h1><br>
+            <p>Si estas interesado en salir de tu rutina y desasrollar un entrenamiento personal unico.. Nuestra escuela es la solucion</p><br>
+            <p>Contamos con un correcto entrenamiento , donde tu puedes elegir el arte marcial que mas te guste. </p><br>
+            <p>O si crees tenes los conocimientos correspondientes, se parte de nuestro equipo de docente, para encaminar a las personas al mejor camino de la disciplina </p>
+        </div>
+    </section>
+    <section>
+    <br><br>
+        <div class="etiqueta3">
+            <h3> Consulta </h3>
+            <p> Mandanos tu consulta y te responderemos a la brevedad.</p>
+            <p>Te enviaremos también toda la información correspondiente al arte marcial de tu interés.</p>
+        </div>
+        <form action="" class="form">
+            <div  class="input">
+                <div class="in">
+                    <input type="text"  placeholder="Nombre" id="nombre" required> <br>
+                    <input type="text" placeholder="Apellido" id="apellido" required> <br>
+                </div>
+                <div class="in">
+                    <input type="tel" placeholder="Telefono" id="telefono" required> <br>
+                    <input type="email" placeholder="Email" id="email"  required> <br>
+                </div>
+            </div>
+            <input type="textarea" placeholder="Tu consulta" class="input3" id="consulta" required>
+            <button onclick="enviar()" class="bf"> Enviar </button> <br>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <img src="Imag/Icono Facebook.png" alt="">
+    <img src="Imag/Icono Instagram.png" alt="">
+    <img src="Imag/Icono Twitter.png" alt="">
+    <img src="Imag/Icono Youtube.png" alt="">
+</footer>
+</body>
+</html>

@@ -1,3 +1,16 @@
+/* CARGADOR */ 
+window.addEventListener('load', function() { 
+    setTimeout(function() {
+        document.getElementById('loaderContainer').style.display = 'none'; 
+        
+        document.getElementById('congratulations').style.display = 'block'; 
+        
+        document.body.style.overflow = 'auto'; 
+    }, 1000); 
+});
+
+
+
 /* NAVAR1 */
 document.addEventListener('DOMContentLoaded', function() {
     const ingreso = document.getElementById('ingreso');
@@ -47,3 +60,26 @@ function enviar() {
         return true;
     }
 }
+
+
+/* LOGIN */
+function login() {
+    var mail = document.getElementById("mail").value;
+    var pass = document.getElementById("contraseña").value;
+
+    if(mail=="rominalopez@gmail.com" && pass=="123456") {
+        alert("Usuario correcto, Bienvenido Alumno")
+        window.location="campusalumn.html"
+    }
+   
+    else if(mail=="estelagarcia@gmail.com" && pass=="123456") {
+        alert("Usuario correcto, Bienvenido Sensei ")
+        window.location="campusdocent"
+    }
+
+    else{
+        alert("Usuario Incorrecto");
+    }
+}
+
+

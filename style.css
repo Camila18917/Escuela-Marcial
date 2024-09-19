@@ -441,7 +441,7 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
         display: none;
     }
     .val{
-        overflow: scroll;
+        overflow-x: scroll;
     }
     .etiquetas2 h3{
         font-size: 1.4rem;
@@ -639,7 +639,7 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
 
 
 
-/* IGRESAR COMO ALUMNO */
+/* IGRESAR COMO DOCENTE */
 
 .alumnos{
     background-attachment: fixed;
@@ -647,34 +647,65 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
     background-image: url(Imag/Fondo\ alumno.png);
     background-size: cover;
 }
-.logoalumno{
-    width: 50%;
-}
 .formalumn{
     background-color: rgba(255, 255, 255, 0.546);
     text-align:center;
     margin:auto;
-    margin-top:2%;
+    margin-top:4%;
     width: 30%;
-    height: 20rem;
-    padding: 50px;
+    height: rem;
+    padding: 15px;
     border-radius:20px;
 }
-.bf{
+.formalumn form input{
+    padding: 2%;
+    margin-bottom: 1%;
+    border-radius: 12px;
+    background-color: rgb(41, 41, 41);
+    color:white;
+}
+.formalumn div h3{
+    font-size: 1.8rem;
+    margin-bottom: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logologin{
+    width: 10rem;
+    height: 13rem;
+}
+
+.buttonlogin{
     padding: 10px;
     width: 130px;
-    background-color: brown;
+    background-color: rgb(212, 34, 34);
     color: white;
-    border-radius:5px ;
+    border-radius:10px ;
     margin: 20px; 
 }
 
+@media screen and (max-width:1000px){
+    .formalumn{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:980px){
+    .formalumn{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:800px){
+    .formalumn{
+        width: 60%;
+    }
+}
 
 
 
 
 
- /* IGRESAR COMO ALUMNODOCENTE */
+ /* LOGIN COMO DOCENTE */
  
 .docente{
     background-attachment: fixed;
@@ -692,8 +723,73 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
     padding: 50px;
     border-radius:20px;
 }
-.titulo2{
+.formdocent form input{
+    padding: 2%;
+    margin-bottom: 1%;
+    border-radius: 12px;
+    background-color: rgb(14, 13, 13);
     color: white;
+}
+
+.titulo2{
+    font-size: 1.2rem;
+    margin-bottom: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+
+@media screen and (max-width:1000px){
+    .formdocent{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:980px){
+    .formdocent{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:800px){
+    .formdocent{
+        width: 60%;
+    }
+}
+
+
+
+/* PAGINA DE ALUMNO/DOCENTE*/
+#loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #830606;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear infinite; 
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.859); 
+    z-index: 1000; 
+}
+.page{
+    background-color: #9d9d9d;
+}
+.fondologin{
+    width: 77rem;
+    height: 36rem;
 }
 
 

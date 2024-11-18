@@ -157,7 +157,28 @@ li a:hover{
         color: white;
         padding-right: 1%;
     }
+    #consultap{
+        width: 19rem;
+        font-size: 11px;
+    }
 }
+
+@media screen and (max-width:400px){
+    .nav.visible{
+    padding: 0.6rem;
+    }
+    div.etiqueta1{
+        height: 22rem ;
+    }
+    div.etiqueta2{
+        height: 28rem ;
+    }
+    #consultap{
+        width: 19rem;
+        font-size: 11px;
+    }
+}
+
 
 
 

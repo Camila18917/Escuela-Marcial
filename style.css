@@ -18,7 +18,7 @@
     width: 25%;;
 }
 .logo{
-    max-width:8rem;
+    max-width:7rem;
     margin-left: 30%;
 }
 .abrir{
@@ -120,6 +120,7 @@ li a:hover{
     }
     .nav.visible{
         opacity: 1;
+        width: 40%;
         visibility: visible;
         position: fixed;
         top: 0;
@@ -428,9 +429,7 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
     width: 25%;
     margin: 0.5rem;
 }
-.dj{
-    overflow-x: ;
-}
+
 .dojoimg{
     padding: 0.5rem;
 }
@@ -472,15 +471,27 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
         margin: auto;
     }
 
-.etiqueta3{
-    overflow-x: scroll;
-}
     .etiquetas3 img{
         width: 60%;
         margin: 0.5rem;
     }
+      .dj{
+    overflow-x: scroll;
+        display: flex;
+    }
+
+    .etiquetas3 img{
+        width: 18rem;
+        margin: 0.6rem;
+        margin-right: rem;
+}
 }
 
+@media screen and (max-width:430px){
+    .etiquetas3 img{
+        width: 15rem;
+    }
+}
 
 
 
@@ -579,6 +590,21 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
     }
 }
 
+@media screen and (max-width:480px){
+
+    .etiquetaa2{
+        width:90% ;
+    }
+    .imga{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:430px){
+    .etiquetaa1{
+        width: 80%;
+    }
+}
 
 
 

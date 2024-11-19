@@ -230,7 +230,7 @@ body{
     margin-bottom: 2%;
 }
 .etiqueta3 p{
-    width: 35rem;
+    width: 50rem;
     font-size: 1.2rem;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -272,6 +272,11 @@ body{
 
 
 
+@media screen and (max-width:1100px){
+    .etiqueta3 p{
+        width: 35rem;
+    }
+}
 
 @media screen and (max-width:900px){
     .s1{
@@ -317,13 +322,14 @@ body{
     }
     .etiqueta3{
         margin-bottom: 6%;
+        width: 70%;
     }
     .etiqueta3 h3{
         font-size: 2rem;
     }
     .etiqueta3 p{
         font-size: 0.8rem;
-        width: 25rem;
+        width: 22rem;
     }
     .input{
         flex-direction: column;
@@ -341,13 +347,26 @@ body{
 
 
 
+@media screen and (max-width:430px){
 
+    .etiqueta3{
+        margin-bottom: 6%;
+        width: 70%;
+    }
+    .etiqueta3 h3{
+        font-size: 2rem;
+    }
+    .etiqueta3 p{
+        font-size: 0.8rem;
+        width: 20rem;
+    }
+}
 
 
  /* SOBRE NOSOTROS */
 .sn1{
     width: 100%;
-    height: 30rem;
+    height: 35rem;
     background-repeat: no-repeat;
     background-image: url(Imag/Fondo\ Nosotros.png);
     background-size:cover;
@@ -426,7 +445,7 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
     margin-bottom: 4%;
 }
 .etiquetas3 img{
-    width: 25%;
+    width: 30%;
     margin: 0.5rem;
 }
 

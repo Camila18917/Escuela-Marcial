@@ -1,3 +1,4 @@
+
 /* NAVAR1 */
 document.addEventListener('DOMContentLoaded', function() {
     const ingreso = document.getElementById('ingreso');
@@ -47,3 +48,4 @@ function enviar() {
         return true;
     }
 }
+

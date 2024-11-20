@@ -10,7 +10,7 @@
     <meta name="autor" content="Camila Gomez">
     <meta name="publisher" content="Escuela de Artes marciales">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    
     <title> inicio de sesion - Bienvenidos a nuestras clases, querido maestro </title>
 </head>
 <body class="docente">
@@ -23,11 +23,12 @@
             El Buen Camino 
             </h3>
         </div>
-        <form action="8-campusdecent.html" >
-            <input type="email" name="mail" id="mail" required placeholder="Email" > <br>
+        <form id="loginForm" >
+            <input type="email" name="email" id="email" required placeholder="Email" > <br>
             <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña" required> <br>
-            <button class="bd" onclick="ingresar2()" > Enviar </button> <br>
+            <button class="bd" type="submit"> Enviar </button> <br>
         </form>
+        <script src="script.js"></script>
     </section>
 </main>
 </body>

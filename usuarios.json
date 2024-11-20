@@ -1,0 +1,4 @@
+[
+    { "usuario": "romil@gmail.com", "contraseña": "12345", "rol": "alumno" },
+    { "usuario": "estelitag@gmail.com", "contraseña": "12345", "rol": "docente" }
+  ]

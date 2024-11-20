@@ -885,9 +885,24 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
 
 
 
-.popup-trigger {
+.arte1  {
     cursor: pointer;
   }
+.arte2  {
+    cursor: pointer;
+  }
+.arte3  {
+    cursor: pointer;
+}
+.arte4  {
+    cursor: pointer;
+}
+.arte5  {
+    cursor: pointer;
+}
+.arte6  {
+    cursor: pointer;
+}
   
   .infoa {
     display: none; /* Oculto por defecto */
@@ -919,7 +934,7 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
     max-width: 20rem;
   }
   
-  #cerrari {
+  .cerrari {
     cursor: pointer;
     width: 3rem;
     margin-bottom: rem;

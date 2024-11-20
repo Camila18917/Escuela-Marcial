@@ -730,27 +730,71 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
     background-size: cover;
 }
 .logoalumno{
-    width: 50%;
+    width: 11rem;
+    margin-top: 1rem;
 }
 .formalumn{
     background-color: rgba(255, 255, 255, 0.546);
     text-align:center;
     margin:auto;
-    margin-top:2%;
-    width: 30%;
-    height: 20rem;
-    padding: 50px;
+    margin-top:5%;
+    width: 35%;
+    height: 30rem;
+    padding: 1rem;
     border-radius:20px;
 }
-.bf{
+.formalumn h3{
+    margin: 0.8rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.formalumn form input{
+    margin-top: 0.6rem;
+    background-color: #414141;
+    border-radius: 8px;
+    color: white;
+    padding: 0.6rem;
+    width: 15rem;
+}
+.ba{
     padding: 10px;
     width: 130px;
-    background-color: brown;
+    background-color:#CC2222;
     color: white;
     border-radius:5px ;
     margin: 20px; 
 }
 
+
+
+@media screen and (max-width:1000px){
+    .logoalumno{
+        width: 8rem;
+        margin-top: 1rem;
+    }
+    .formalumn h3{
+        margin: 0.8rem;
+        font-size: 1.2rem;
+    }
+    .formalumn form input{
+        width: 12rem;
+    }
+    .ba{
+        width: 6rem;
+    }
+    .formalumn{
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .formalumn{
+        margin-top: 6rem;
+    }
+}
 
 
 
@@ -777,6 +821,9 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
 .titulo2{
     color: white;
 }
+
+
+
 
 
 

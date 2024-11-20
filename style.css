@@ -165,6 +165,88 @@ li a:hover{
 
 
 
+
+/* SUB BARRA DE NAVEGACION*/
+.arte1  {
+    cursor: pointer;
+  }
+.arte2  {
+    cursor: pointer;
+  }
+.arte3  {
+    cursor: pointer;
+}
+.arte4  {
+    cursor: pointer;
+}
+.arte5  {
+    cursor: pointer;
+}
+.arte6  {
+    cursor: pointer;
+}
+  
+  .infoa {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .infocontenido {
+    background-image: url(https://i.pinimg.com/1200x/e2/c2/eb/e2c2ebba45c48b0b763dbdb63bfc6bff.jpg);
+    background-size:45rem;
+    padding: 4rem;
+    border-radius: 5px;
+    max-width: 40rem;
+  }
+
+  .infocontenido h2{
+    color:#4e0505;
+    font-family: 'Franklin Gothic Medium';
+  }
+
+  .infocontenido p{
+    max-width: 20rem;
+  }
+  
+  .cerrari {
+    cursor: pointer;
+    width: 3rem;
+    margin-bottom: rem;
+    padding: 0.5rem;
+    float:right;
+  }
+  
+
+  @media (max-width: 600px) {
+    .infocontenido {
+      width: 75%;
+    }
+    .infocontenido p{
+        font-size: 0.8rem;
+      }
+    .p1{
+        display: none;
+    }
+    .p2{
+        display: none;
+    }
+  }
+
+
+
+
+
+
+
+
  /* HOME */
 
 body{
@@ -870,107 +952,11 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
 
 
 
-
-
-
-/* Pagina de docente/alumno */
+/* PAGINA DEL DOCENTE/ALUMNO*/
 .imgpage{
     width: 80rem;
 
 }
-
-
-
-
-
-
-
-.arte1  {
-    cursor: pointer;
-  }
-.arte2  {
-    cursor: pointer;
-  }
-.arte3  {
-    cursor: pointer;
-}
-.arte4  {
-    cursor: pointer;
-}
-.arte5  {
-    cursor: pointer;
-}
-.arte6  {
-    cursor: pointer;
-}
-  
-  .infoa {
-    display: none; /* Oculto por defecto */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  .infocontenido {
-    background-image: url(https://i.pinimg.com/1200x/e2/c2/eb/e2c2ebba45c48b0b763dbdb63bfc6bff.jpg);
-    background-size:45rem;
-    padding: 4rem;
-    border-radius: 5px;
-    max-width: 40rem;
-  }
-
-  .infocontenido h2{
-    color:#4e0505;
-    font-family: 'Franklin Gothic Medium';
-  }
-
-  .infocontenido p{
-    max-width: 20rem;
-  }
-  
-  .cerrari {
-    cursor: pointer;
-    width: 3rem;
-    margin-bottom: rem;
-    padding: 0.5rem;
-    float:right;
-  }
-  
-  /* Estilos responsivos */
-  @media (max-width: 600px) {
-    .infocontenido {
-      width: 75%;
-    }
-    .infocontenido p{
-        font-size: 0.8rem;
-      }
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

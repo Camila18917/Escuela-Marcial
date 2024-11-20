@@ -763,7 +763,7 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
     width: 130px;
     background-color:#CC2222;
     color: white;
-    border-radius:5px ;
+    border-radius:20px ;
     margin: 20px; 
 }
 
@@ -800,7 +800,7 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
 
 
 
- /* IGRESAR COMO ALUMNODOCENTE */
+ /* IGRESAR COMO DOCENTE */
  
 .docente{
     background-attachment: fixed;
@@ -810,17 +810,149 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
 }
 .formdocent{
     background-color: rgba(0, 0, 0, 0.785);
-    width: 60%;
     text-align:center;
     margin:auto;
-    margin-top:2%;
-    width: 30%;
-    padding: 50px;
+    margin-top:5%;
+    width: 35%;
+    height: 30rem;
+    padding: 1rem;
     border-radius:20px;
 }
-.titulo2{
+.formdocent form input{
+    margin-top: 0.6rem;
+    background-color: #050607;
+    border-radius: 8px;
     color: white;
+    padding: 0.6rem;
+    width: 15rem;
 }
+.titulo2{
+    color: antiquewhite;
+    margin: 0.8rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+}
+.bd{
+    padding: 10px;
+    width: 130px;
+    background-color:#CC2222;
+    color: white;
+    border-radius:20px ;
+    margin: 20px; 
+}
+
+
+
+@media screen and (max-width:1000px){
+    .formdocent h3{
+        margin: 0.8rem;
+        font-size: 1.2rem;
+    }
+    .formdocent form input{
+        width: 12rem;
+    }
+    .bd{
+        width: 6rem;
+    }
+    .formdocent{
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .formdocent{
+        margin-top: 6rem;
+    }
+}
+
+
+
+
+
+
+
+/* Pagina de docente/alumno */
+.imgpage{
+    width: 80rem;
+
+}
+
+
+
+
+
+
+
+.popup-trigger {
+    cursor: pointer;
+  }
+  
+  .infoa {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .infocontenido {
+    background-image: url(https://i.pinimg.com/1200x/e2/c2/eb/e2c2ebba45c48b0b763dbdb63bfc6bff.jpg);
+    background-size:45rem;
+    padding: 4rem;
+    border-radius: 5px;
+    max-width: 40rem;
+  }
+
+  .infocontenido h2{
+    color:#4e0505;
+    font-family: 'Franklin Gothic Medium';
+  }
+
+  .infocontenido p{
+    max-width: 20rem;
+  }
+  
+  #cerrari {
+    cursor: pointer;
+    width: 3rem;
+    margin-bottom: rem;
+    padding: 0.5rem;
+    float:right;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 600px) {
+    .infocontenido {
+      width: 75%;
+    }
+    .infocontenido p{
+        font-size: 0.8rem;
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

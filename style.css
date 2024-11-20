@@ -436,16 +436,15 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
     margin-top: 5%;
     width: 70%;
     text-align: center;
-    
-    margin-bottom: 7%;
+    margin-bottom: 5%;
 }
 .etiquetas3 h3{
     font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 4%;
+    margin-bottom: 2%;
 }
 .etiquetas3 img{
-    width: 30%;
+    width:25%;
     margin: 0.5rem;
 }
 
@@ -687,10 +686,30 @@ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans
 }
 
 
-@media screen and (max-width:700px){
+
+@media screen and (max-width:600px){
+    .sc{
+        height: 55rem;
+        display:grid;
+        text-align: center;
+        justify-content: center;
+    }
     .contacto{
-        height: 12rem;
-        width: 40%;
+        margin: 0.5rem;
+        width: 20rem;
+        padding: 0.5rem;
+    }
+    .contacto h1{
+        margin-bottom: 1rem;
+        margin-top:2rem;
+    }
+    .contacto button{
+        width: 7rem;
+        padding:0.5rem;
+        margin-bottom: 1rem;
+    }
+    .contacto p{
+        font-size:0.8rem
     }
 }
 

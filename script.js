@@ -66,16 +66,17 @@ function enviar() {
     const telefono = document.getElementById('telefono').value;
     const consulta = document.getElementById('consulta').value;
     const email = document.getElementById('email').value;
-
+    const validador = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    
     // Verificar si hay campos vacíos
     if (nombre === '' || apellido === '' || telefono === '' || email === 'ejemplo@gmail.com' || consulta === '') {
         alert("Por favor, complete todos los campos.");
         return false; // Detener el envío si hay campos vacíos
     }
-
-    // Si todo es correcto, mostrar un mensaje de éxito
+    if (validador.test(email)){
     alert("¡Se envió con éxito tu consulta!");
     return true; // Permitir el envío del formulario
+    }
 }
 
 
